@@ -1,0 +1,13 @@
+<form>
+
+<a href ="/form">投稿する</a> <a href ="/index">ホームに戻る</a>
+<div id="toukou">
+    <ul>
+        <% @toukous.each do |toukou| %>
+        <p>name: <%= toukou["name"] %></p>
+        <p>content: <%= toukou["content"] %></p> 
+        <p>taiken: <%= toukou["taiken"]%></p>
+        <% end %>
+    </ul>
+</div>
+</form>

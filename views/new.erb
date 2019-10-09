@@ -1,0 +1,17 @@
+
+<form action="/new" method="post">
+    <h1 class="center" style="color: greenyellow;">新規登録</h1>
+    <p>
+    <label for="name">名前</label><br>
+    <input type="text" name="name" id="name" placeholder="名前を設定してください" value="<%= @name %>"required>
+    </p>
+    <p>
+    <label for="password">パスワード</label><br>
+    <input type="password" name="password" id="password" placeholder="パスワードを設定してください" value="<%= @password %>"required>
+    </p>
+    <p>
+    <label for="email">メールアドレス</label><br>
+  　<input type="email" name="email" id="email" placeholder="アドレスを設定してください" value="<%= @email %>"required>　
+    </p>
+    <button class="button" type="submit">登録！</button>
+</form>

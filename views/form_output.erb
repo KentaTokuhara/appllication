@@ -1,0 +1,22 @@
+<form action="/form_output" method="post">
+<h2 style="color: greenyellow;">よろしいですか？</h1>
+
+<h2 style="color: greenyellow;">あなたの体験談・投稿 <%= @name %>さん</h2>
+  <p>
+  <label for="name">名前</label>
+  <input type="hidden" name="name" id="name" value="<%= @name %>">
+  </p>
+  <p><%= @name %></p>
+  <p>
+  <label for="content">タイトル</label>
+  <input type="hidden" name="content" id="content" value="<%= @content %>">
+  </p>
+  <p><%= @content %></p>
+  <p>
+  <label for="taiken">体験談</label><br>
+  <input type="hidden" name="taiken" id="taiken" value="<%= @taiken %>">
+  </p>
+  <p><%= @taiken %></p>
+  <button><a href="/form"> 編集する！ </a></button>
+  <input type="submit" value="投稿する">
+</form> 

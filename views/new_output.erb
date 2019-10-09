@@ -1,0 +1,22 @@
+
+
+<form action="/new_output" method="post">
+  <h1 class="center" style="color: greenyellow;">よろしいですか？</h1>
+    <p>
+    <label for="name">名前</label><br>
+    <input type="hidden" name="name" id="name" value="<%= @name%>">
+    </p>
+    <p><%= @name%></p>
+    <p>
+    <label for="password">パスワード</label><br>
+    <input type="hidden" name="password" id="password" value="<%= @password %>">
+    </p>
+    <p><%= @password %></p>
+    <p>
+    <label for="email">メールアドレス</label><br>
+  　<input type="hidden" name="email" id="email" value="<%= @email %>">
+    </p>
+    <p><%= @email %></p>
+    <button class= "btn"><a href="/new"> 編集する！ </a></button>
+    <button class= "btn"><input type="submit" value="登録する！"></button>
+</form>

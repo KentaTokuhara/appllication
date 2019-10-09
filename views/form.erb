@@ -1,0 +1,17 @@
+<form action="/form" method="post">
+<h2 style="color: greenyellow;">あなたの体験談・投稿<%= @name %></h2>
+  <p>
+  <label for="name">名前</label><br>
+  <input type="text" name="name" id="name"　placeholder="お名前を記入してください" value="<%= @name %>"required>
+  </p>
+  <p>
+  <label for="content">タイトル</label><br>
+  <input type="textarea" name="content" id="content" placeholder="タイトルを記入してください" value="<%= @content %>"required>
+  </p>
+  <p>
+  <label for="taiken">体験談</label><br>
+  <textarea name="taiken" id="taiken" cols="40" rows="4" maxlength="400" placeholder="体験談をご記入ください"　value="<%= @taiken %>"required></textarea>
+  </p>
+  <input type="submit" value="送信する">
+</form> 
+
